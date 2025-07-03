@@ -1,0 +1,13 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <div class="form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title" />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Body</mat-label>
+      <input matInput formControlName="body" />
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Add Post</button>
+  </div>
+</form>

@@ -1,0 +1,20 @@
+<h3>Posts</h3>
+
+<div class="card" *ngFor="let post of paginatedPosts">
+  <mat-card class="example-card mat-elevation-z8">
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>{{ post.title }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ post.body }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<mat-paginator
+  [length]="posts.length"
+  [pageSize]="10"
+  [pageSizeOptions]="[10]"
+  (page)="onPageChange($event)"
+></mat-paginator>

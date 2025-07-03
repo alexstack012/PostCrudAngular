@@ -1,0 +1,13 @@
+.mat-mdc-card {
+    background-color: white;
+}
+
+.card {
+    padding: 2rem;
+}
+
+
+.mat-mdc-card-outlined {
+    border-color: purple !important;
+    border-width: 4px;
+}

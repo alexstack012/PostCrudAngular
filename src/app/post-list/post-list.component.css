@@ -1,0 +1,12 @@
+.mat-mdc-card {
+    background-color: white;
+}
+
+.card {
+  padding: 1rem;
+}
+
+.mat-card:hover {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease-in-out;
+}
